@@ -1,0 +1,425 @@
+h1 {
+    font-family:"Vollkorn";
+    padding-bottom: 0;
+    font-size: 50px;
+  }
+  
+  h2 {
+    font-family: 'Vollkorn';
+    color: #464646;
+     font-size: 1.7em;
+  line-height: 1.1;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  h3 {
+  font-family: 'vollkorn', serif;
+  font-size: 1.1em;
+  color: #464646;
+  }
+  
+  h4 {
+    text-align: center;
+  }
+  
+  h6 {
+    font-family: 'Vollkorn';
+    color: #993333;
+     font-size: 1.7em;
+  line-height: 1.1;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  .logo {
+    height: 50px;
+  }
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: ;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .columns_2 {
+    padding: 10px 15px;
+    
+  }
+  
+  .columns_3 {
+    width: 30%;
+    padding: 15px;
+  }
+  
+  .hero-image {
+    background-image: url("images/hero-image.jpg");
+    height: 80vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .hero-text {
+    text-align: right;
+    position: absolute;
+    color: white;
+    right: 50px;
+    bottom: 175px;
+  }
+  
+  .hero-text button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 10px 25px;
+    color: white;
+    background-color: #993333;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 20px;
+  }
+  
+  
+  
+  .help{
+    background-color: #E7E7E6;
+  }
+  
+  .about {
+    text-align: left;
+    background-color: #fff;
+    padding-left: 20px;
+    padding-right: 20px; 
+    
+  }
+  
+  .about img {
+    max-width: 500%;
+    height: auto;
+    padding: 15px 0;
+    float: left;
+    padding-right: 400px;
+  }
+  
+  .history img {
+    padding-top: 15px;
+    padding-bottom: 20px;
+  }
+  .history{
+    background-color: #E7E7E6;
+    text-align: center;
+  }
+  
+  .services {
+  background-image: url("images/blue-pattern.jpg");
+  padding-left: px;
+  padding-right: px; 
+  text-align: left;
+  }
+  
+  .services img {
+    max-width: 500%;
+    height: auto;
+    padding: 15px 0;
+    padding-right: 400px;
+    padding-left: 90px;
+    float: left;
+  }
+  
+  .stories {
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  
+  .stories img {
+    margin-top: 40px;
+    padding: 10px 0;
+  }
+  
+  .stories button {
+   border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 10px 14px;
+    color: white;
+    background-color: #993333;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 20px;
+  }
+  
+  .donate {
+    background-color: #E7E7E6;
+   font-family: Nunito:wght@300;
+  }
+  
+  .contact {
+    background-image: url("images/blue-pattern.jpg");
+  }
+  
+  form {
+    width: 700px;
+    margin-top: 5vh;
+  }
+  
+  input {
+    width: 100%;
+  }
+  
+  textarea {
+    resize: vertical;
+    max-height: 100px;
+  }
+  
+  input, textarea {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #AED6F1;
+    border-right: 1px dashed #ddd;
+    margin: 10px;
+    font-size: .9em;
+  }
+  
+  input:focus, textarea:focus {
+    box-shadow: 0 0 4px rgba(46, 134, 193);
+  }
+  
+  ::placeholder {
+    color: #2E86C1;
+    opacity: .3;
+  }
+  
+  .submit-button {
+    display: block;
+    padding: 5px 15px;
+    margin: 20px auto;
+    border: none;
+    outline: 0;
+    display: inline-block;
+    color: white;
+    background-color: #993333;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 20px;
+  }
+  
+  .submit-button:hover {
+    background: white;
+    color: #000;
+  }
+  
+  
+  
+  
+  @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+  
+  :root {
+    --background: rgba(110, 164, 187, 100);
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  
+   
+  body {
+    margin: 0;
+    background: #222;
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
+  }
+  
+  header {
+    background: var(--background);
+    padding: 15px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  .logo {
+    margin: 0;
+  }
+  
+  .nav-toggle {
+    display: none;
+  }
+  
+  nav {
+    position: absolute;
+    text-align: left;
+    top: 100%;
+    left: 0;
+    background: var(--background);
+    width: 100%;
+    transform: scale(1,0);
+    transform-origin: top;
+    transition: transform 400ms ease-out;
+  }
+  
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  nav li {
+    margin-bottom: 1em;
+    margin-left: 1em;
+    padding-left: 1px;
+    padding-right: .2px;
+  }
+  
+  nav a {
+    color: black;
+    text-decoration: none;
+    font-size: 0.8rem;
+    text-transform: mix;
+    opacity: 0;
+    transition: opacity 150ms ease-out;
+  }
+  
+  .nav-toggle:checked ~ nav {
+    transform:scale(1,1);
+  }
+  
+  .nav-toggle:checked ~ nav a {
+    opacity: 1;
+    transition: opacity 250ms ease-out 300ms;
+  }
+  
+  nav a:hover {
+    color: #C04C4B;
+  }
+  
+  .nav-toggle-label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 1em;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-toggle-label span,
+  .nav-toggle-label span::before,
+  .nav-toggle-label span::after{
+    display: block;
+    background: white;
+    height: 2px;
+    width: 2em;
+    border-radius: 2px;
+    position: relative;
+  }
+  
+  .nav-toggle-label span::before,
+  .nav-toggle-label span::after{
+    content: "";
+  }
+  
+  .nav-toggle-label span::before {
+    bottom: 7px;
+  }
+  
+  .nav-toggle-label span::after {
+    top: 7px;
+  }
+  
+  
+  
+  @media screen and (min-width: 600px) {
+    .nav-toggle-label {
+      display: none;
+    }
+    
+    header {
+      display: grid;
+      grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
+    }
+    
+    .logo {
+      grid-column: 2/3;
+    }
+    
+    nav {
+      all:unset;
+      grid-column: 3/4;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+    
+    nav ul {
+      display: flex;
+    }
+    
+    nav li {
+      margin-left: 2em;
+      margin-bottom: 0;
+    }
+    
+    nav a {
+      opacity: 1;
+      position: relative;
+    }
+    
+    nav a::before {
+      content: "";
+      display: block;
+      height: 5px;
+      background: black;
+      position: absolute;
+      top: -.5em;
+      left: 0;
+      right: 0;
+      transform: scale(0,1);
+      transform-origin: left;
+      transition: transform ease-in-out 250ms;
+    }
+    
+    nav a:hover::before {
+      transform: scale(1,1);
+    }
+    
+  }
+  
+  .inspo-title{
+    text-align: center;
+    padding: 50px 0;
+    padding-bottom: 50px;
+  }
+  
+  footer{
+  width:100%;
+    height: 200px;
+  background: var(--background);
+    padding: 30px;
+  }
+  .footer-copyright{
+  padding-top: 0;
+  width:100%;
+  text-align: center;
+   padding-top: 130px;
+  }
+  
+  .branding{ background:url("images/shm-logo.svg")no-repeat;
+    width: 170px;
+    height: 40px;
+    float: left;
+    text-indent: -999em;
+  }
+  
